@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 1000;
+}
+:root {
+  --mainColor: #69bf41;
+  --darkColor: #271d26;
+  --lightColor: #e4edf2;
+  --decorationColor: #afbcc448;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--darkColor);
+  height: 100vh;
+}
+canvas {
+  margin-top: 10rem;
+  background-color: var(--lightColor);
+  border-bottom: 5px solid var(--darkColor);
+}
+.gameMenu {
+  position: fixed;
+  left: 5rem;
+  top: 5rem;
+  color: var(--lightColor);
+  font-size: 1rem;
+}
+.gameMenu span {
+  color: var(--mainColor);
+}
+#died {
+  color: #ff4655;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+#level {
+  font-size: 2rem;
+}

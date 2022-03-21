@@ -1,0 +1,13 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="invisible_box" data-name="invisible box">
+    <rect id="Rectangle_96" data-name="Rectangle 96" width="48" height="48" fill="none"/>
+  </g>
+  <g id="Layer_4" data-name="Layer 4" transform="translate(3.605 2)">
+    <g id="Group_2" data-name="Group 2">
+      <path id="Path_21" data-name="Path 21" d="M38,20.4V21a9,9,0,0,1-18,0,3.4,3.4,0,0,1,.1-1H13A10,10,0,0,0,3,30v6A10,10,0,0,0,13,46H35A10,10,0,0,0,45,36V30A10.2,10.2,0,0,0,38,20.4Z" transform="translate(-3 -2)" fill="#f2f2f2"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="8" cy="8" r="8" transform="translate(5.395)" fill="#f2f2f2"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="3" cy="3" r="3" transform="translate(25.395 5)" fill="#f2f2f2"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="5" cy="5" r="5" transform="translate(20.395 14)" fill="#f2f2f2"/>
+    </g>
+  </g>
+</svg>

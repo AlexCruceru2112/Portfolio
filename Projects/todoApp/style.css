@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-color: #505050;
+  --light-color: #f3f3f3;
+
+  --red-color: #ff5a33;
+  --red-colorII: #dd2d05;
+
+  --green-color: #abd802;
+  --green-colorII: #8fb310;
+
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --borde-radius: 5px;
+}
+body {
+  background-color: #271d26;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+@media screen and (max-width: 360px) {
+  body {
+    display: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+main {
+  background: var(--light-color);
+  border-radius: var(--borde-radius);
+  padding: 2rem 1rem;
+  width: min(450px, 100%);
+  box-shadow: var(--box-shadow);
+}
+.main-title {
+  font-weight: bold;
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title span {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.8;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+}
+.todo-input {
+  color: var(--dark-color);
+  background: var(--light-color);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--borde-radius);
+  border: none;
+  padding: 0 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  height: 50px;
+  width: 100%;
+  transition: 0.3s;
+  flex: 1;
+}
+.todo-input::placeholder {
+  font-size: 16px;
+  color: var(--dark-color);
+}
+.todo-input:focus {
+  transition: 0.5s;
+  background: white;
+  border-radius: var(--borde-radius);
+  outline: none;
+}
+.todo-input:hover {
+  transition: 0.5s;
+  background: white;
+  border-radius: var(--borde-radius);
+  cursor: pointer;
+}
+.todo-button {
+  color: var(--dark-color);
+  background: var(--light-color);
+  border-radius: var(--borde-radius);
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  width: 25%;
+  font-size: 32px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+}
+.todo-button:hover {
+  transition: 0.5s;
+  background-color: white;
+  cursor: pointer;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  height: 50px;
+  text-align: left;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  border-radius: var(--borde-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+}
+select:hover {
+  transition: 0.5s;
+  background-color: white;
+}
+.select-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: var(--borde-radius);
+  cursor: pointer;
+}
+.select-option:active {
+  transform: scale(0.95);
+}
+.option-all {
+  width: 25%;
+  color: var(--light-color);
+  background-color: transparent;
+  border: 2px solid var(--light-color);
+  transition: 0.2s;
+}
+.option-completed {
+  margin: 0 0.5rem;
+  color: var(--light-color);
+  background: var(--green-color);
+  border: 2px solid var(--green-color);
+  transition: 0.2s;
+}
+.option-uncompleted {
+  color: var(--light-color);
+  background-color: var(--red-color);
+  border: 2px solid var(--red-color);
+  transition: 0.2s;
+}
+.option-all:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+.option-completed:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: var(--green-colorII);
+  border: 2px solid var(--green-colorII);
+}
+.option-uncompleted:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: var(--red-colorII);
+  border: 2px solid var(--red-colorII);
+}
+.todo-container {
+  margin-top: 2rem;
+  overflow-y: scroll;
+  height: fit-content;
+}
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  border-radius: var(--borde-radius);
+  margin: 0.5rem 0;
+  padding: 0.25rem;
+  transition: 0.3s;
+  font-size: 24px;
+}
+.todo:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.todo-li-text {
+  width: 200px;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  word-break: break-word;
+  flex: 1;
+}
+
+.complete-btn {
+  margin: 0 0.5rem;
+  background-color: var(--green-color);
+}
+.complete-btn:hover {
+  transition: 0.5s;
+  background-color: var(--green-colorII);
+}
+.trash-btn {
+  background-color: var(--red-color);
+}
+.trash-btn:hover {
+  background-color: var(--red-colorII);
+  transition: 0.5s;
+}
+.trash-btn,
+.complete-btn {
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--borde-radius);
+  color: var(--light-color);
+  font-weight: 1000;
+  transition: 0.3s;
+}
+.trash-btn:active,
+.complete-btn:active {
+  transform: scale(0.9);
+}
+
+.completed {
+  color: var(--light-color);
+  background-color: var(--green-colorII);
+}
+.completed > .trash-btn {
+  display: none;
+}
+.completed > .todo-li-text {
+  text-decoration: line-through;
+}

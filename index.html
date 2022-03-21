@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/IMAGE/main-img.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <!----------------------->
+
+    <title>Portfolio | Cruceru Alexandru</title>
+  </head>
+  <body class="bg-light">
+    <button type="button" class="btn btn-danger btn-floating btn-md" id="btn-back-to-top">back to top</button>
+    <!----------------------------cd-| PAGE HEADER |---->
+    <section id="nav">
+      <div class="bg-light py-2 text-center text-light">secret text</div>
+      <nav id="navBar">
+        <div class="container bg-light border-bottom d-flex flex-wrap justify-content-center pt-3">
+          <a
+            href="#nav"
+            class="d-flex flex-column align-items-lg-end mb-3 mb-md-0 me-md-auto text-dark text-decoration-none lh-1 d-none d-lg-block"
+          >
+            <blockquote class="blockquote fw-bolder text-dark">Portfolio Website - Alex Cruceru</blockquote>
+            <figcaption class="blockquote-footer text-uppercase text-end">Junior Front-End Dev.</figcaption>
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active fw-bolder mx-lg-1 border px-lg-5" aria-current="page" id="homeLink"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="#work" class="nav-link fw-bolder mx-lg-1 border px-lg-5" id="workLink">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-----------------------------| FRONT PAGE |----->
+    <section id="home">
+      <div class="container">
+        <!---->
+        <div class="d-lg-flex flex-row-reverse align-items-lg-center align-items-start justify-content-between my-5">
+          <img src="./IMAGE/main-img2.png" alt="main-img" class="img-fluid mb-lg-5 pt-lg-5" />
+
+          <div class="d-flex flex-column text-center text-lg-start custom-main-text pt-5">
+            <div class="display-3 text-dark fw-bold">Web UI Designer & Front End Developer</div>
+            <div class="lead my-2 fw-normal text-secondary">
+              Hi there! My name is Alexandru and I introduce myself as a junior self-taught Web Developer enthusiast
+              with two years of experience and twenty four of life, who loves art.
+            </div>
+
+            <div class="d-grid gap-2 d-lg-block mt-3">
+              <a
+                href="https://resume.io/r/8gucBDlA1"
+                target="_blank"
+                class="resumeBtn btn border-dark btn-lg"
+                role="button"
+                aria-disabled="true"
+                >Check Resume</a
+              >
+              <a
+                href="mailto:alexandru.devend@gmail.com"
+                class="contactBTN btn btn-dark btn-lg text-light"
+                role="button"
+                aria-disabled="true"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </section>
+    <!-----------------------------| EXP PAGE |------->
+    <section id="exp">
+      <div class="container border-top pb-5">
+        <span class="badge bg-secondary my-3">My Experience</span>
+        <div class="row g-4 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <img src="./IMAGE/Icons/react.png" class="img-fluid rounded me-2 custom-exp-icon" />
+            <div>
+              <h2 class="fw-bolder text-dark">Front End_</h2>
+              <p class="text-secondary">
+                I know HTML, CSS, Javascript, <span class="fw-bolder">React JS, Bootstrap</span>, Typescript, JQuery and
+                Git.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./IMAGE/Icons/adobe-xd.png" class="img-fluid rounded me-2 custom-exp-icon" />
+
+            <div>
+              <h2 class="fw-bolder text-dark">Graphic Design_</h2>
+              <p class="text-secondary">
+                I've worked for 4 years in freelancing with <span class="fw-bolder">Adobe XD</span>, Photoshop and
+                Illustrator.
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <img src="./IMAGE/Icons/man.png" class="img-fluid rounded me-2 custom-exp-icon" />
+
+            <div>
+              <h2 class="fw-bolder text-dark">Social Skills_</h2>
+              <p class="text-secondary">
+                I'm a bald and creative guy, passionate about <span class="fw-bolder">code and design</span>, English
+                advanced.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </section>
+    <!-----------------------------| WORK PAGE |------>
+    <section id="work">
+      <div class="container border-top pb-5">
+        <span class="badge bg-secondary my-3">Work and Projects</span>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+          <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Drawing App">
+            <div class="card shadow-sm custom-project-card">
+              <a href="./Projects/DrawingApp/index.html" target="_blank"
+                ><img src="./IMAGE/thumbnails/DrawingApp.png" class="img-fluid"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h2 class="fw-bolder text-dark mt-2">Drawing App</h2>
+                <p class="text-secondary">
+                  This is a simple drawing app made with JQuery, you have a brush, erase also, you can save your drawing
+                  locally.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./Projects/DrawingApp/index.html" target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary me-1">View Project</button></a
+                    >
+                    <a
+                      href="https://github.com/AlexCruceru2112/Portfolio-WEBSITE/tree/main/Projects/DrawingApp"
+                      target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
+                    >
+                  </div>
+                  <small class="text-muted">JQuery</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Jumping Game">
+            <div class="card shadow-sm custom-project-card">
+              <a href="./Projects/JumpingGAME/index.html" target="_blank"
+                ><img src="./IMAGE/thumbnails/jumpGame.png" class="img-fluid"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h2 class="fw-bolder text-dark mt-2">Jumping Game</h2>
+                <p class="text-secondary">
+                  Vanilla Javascript side-scroll game made with Classes. This game is gonna hold your death count >:)
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./Projects/JumpingGAME/index.html" target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary me-1">View Project</button></a
+                    >
+                    <a
+                      href="https://github.com/AlexCruceru2112/Portfolio-WEBSITE/tree/main/Projects/JumpingGAME"
+                      target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
+                    >
+                  </div>
+                  <small class="text-muted">JS Classes</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Game Stats">
+            <div class="card shadow-sm custom-project-card">
+              <a href="./Projects/GameStats/index.html" target="_blank"
+                ><img src="./IMAGE/thumbnails/gameAPI.png" class="img-fluid"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h2 class="fw-bolder text-dark mt-2">Game Stats (API)</h2>
+                <p class="text-secondary">
+                  Check out your real-time game stats (Overwatch ). It's gonna show your searches account level, games
+                  won and competitive ranks (or an unranked UI).
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./Projects/GameStats/index.html" target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary me-1">View Project</button></a
+                    >
+                    <a
+                      href="https://github.com/AlexCruceru2112/Portfolio-WEBSITE/tree/main/Projects/GameStats"
+                      target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
+                    >
+                  </div>
+                  <small class="text-muted">Public API</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="To Do App">
+            <div class="card shadow-sm custom-project-card">
+              <a href="./Projects/todoApp/index.html" target="_blank"
+                ><img src="./IMAGE/thumbnails/todoApp.png" class="img-fluid"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h2 class="fw-bolder text-dark mt-2">TODO App</h2>
+                <p class="text-secondary">
+                  An application made too many times.. basically saves your list in local storage that you can delete or
+                  complete. It also has a feature for sort the list by category (All, Unfinished, Completed).
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./Projects/todoApp/index.html" target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary me-1">View Project</button></a
+                    >
+                    <a
+                      href="https://github.com/AlexCruceru2112/Portfolio-WEBSITE/tree/main/Projects/todoAPP"
+                      target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
+                    >
+                  </div>
+                  <small class="text-muted">LocalStorage</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Snake">
+            <div class="card shadow-sm custom-project-card">
+              <a href="./Projects/snakeJS/index.html" target="_blank"
+                ><img src="./IMAGE/thumbnails/snakeJS.png" class="img-fluid"
+              /></a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h2 class="fw-bolder text-dark mt-2">Vanilla JSnake</h2>
+                <p class="text-secondary">
+                  This is probably the best Snake Game that you're ever gonna play! It shows your current score and you
+                  can change the Music and/or Effects volume.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./Projects/snakeJS/index.html" target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary me-1">View Project</button></a
+                    >
+                    <a
+                      href="https://github.com/AlexCruceru2112/Portfolio-WEBSITE/tree/main/Projects/snakeJS"
+                      target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
+                    >
+                  </div>
+                  <small class="text-muted">Javascript</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="React Context">
+            <div class="card shadow-sm custom-project-card">
+              <img src="./IMAGE/thumbnails/react-context.png" class="img-fluid" />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h2 class="fw-bolder text-dark mt-2">React Context & Redux</h2>
+                <p class="text-secondary">
+                  A simple movie list app that has his data stored in a react-context component. You can also add /
+                  delete other movies to the list.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/AlexCruceru2112/Portfolio-WEBSITE/tree/main/Projects/ReactProjects/context-redux/react-context-redux"
+                      target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
+                    >
+                  </div>
+                  <small class="text-muted">React JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="React Router">
+            <div class="card shadow-sm custom-project-card">
+              <img src="./IMAGE/thumbnails/reactRouter.png" class="img-fluid" />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h2 class="fw-bolder text-dark mt-2">React-Router + API</h2>
+                <p class="text-secondary">
+                  This is a app that you can use to discover all of the Fortnite skins. It was made by using a free API
+                  as well as useEffect(), useState(), and of course react-router.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/AlexCruceru2112/Portfolio-WEBSITE/tree/main/Projects/ReactProjects/react-router/react-router-app"
+                      target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
+                    >
+                  </div>
+                  <small class="text-muted">React JS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------| CONTACT PAGE |--->
+    <section id="contact">
+      <div class="container border-top pb-5">
+        <footer class="d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center py-3">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"> </a>
+            <span class="text-dark">&copy; 2022 Alex Cruceru, All rights reserved.</span>
+          </div>
+
+          <ul class="nav col-md-6 justify-content-end list-unstyled d-flex mt-3 mt-lg-0">
+            <li
+              class="ms-3 contact-link border rounded-circle"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Facebook"
+            >
+              <a class="text-muted" href="https://www.facebook.com/alexandru.cruceru.77/" target="_blank"
+                ><img src="./IMAGE/Icons/facebook.png" style="width: 48px; height: 48px"
+              /></a>
+            </li>
+            <li
+              class="ms-3 contact-link border rounded-circle"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Linked In"
+            >
+              <a class="text-muted" href="https://www.linkedin.com/in/alexandru-cruceru-43823a1b4/" target="_blank"
+                ><img src="./IMAGE/Icons/linkedin.png" style="width: 48px; height: 48px"
+              /></a>
+            </li>
+            <li
+              class="ms-3 contact-link border rounded-circle"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="e-mail"
+            >
+              <a class="text-muted" href="mailto:alexandru.devend@gmail.com"
+                ><img src="./IMAGE/Icons/mail.png" style="width: 48px; height: 48px"
+              /></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

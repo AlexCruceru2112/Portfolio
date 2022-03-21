@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>js snake</title>
+  </head>
+  <body>
+    <audio data-key="Music" src="./Sounds/Music.mp3"></audio>
+    <audio data-key="Effect" src="./Sounds/Effect.mp3"></audio>
+    <audio data-key="Click" src="./Sounds/Click.mp3"></audio>
+
+    <div class="mainMenu" id="mainMenu">
+      <div class="mainBtns">
+        <div class="play" id="play">play</div>
+        <div class="stop" id="pause">pause</div>
+        <div class="restart" id="restart">stop</div>
+      </div>
+      <div class="secBtns">
+        <div class="options" id="options">options</div>
+        <div class="quit" id="quit">quit game</div>
+      </div>
+
+      <div class="score" id="score">Score: 0</div>
+    </div>
+
+    <div class="optionsMenu">
+      <div class="Music">
+        <div class="musicText">music volume</div>
+        <input type="range" id="musicRange" />
+      </div>
+      <div class="Effects">
+        <div class="musicText">effects volume</div>
+        <input type="range" id="effectsRange" />
+      </div>
+
+      <div class="optionsBack" id="backBtn">go back</div>
+    </div>
+
+    <canvas width="500" height="500" id="canvas"></canvas>
+
+    <script src="snake.js"></script>
+  </body>
+</html>

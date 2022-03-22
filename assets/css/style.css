@@ -76,7 +76,6 @@ body {
 
   .work-tile:hover {
     transition: 0.2s ease-in;
-    transform: scale(0.99);
     opacity: 0.95;
   }
 

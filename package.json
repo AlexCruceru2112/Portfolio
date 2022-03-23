@@ -16,7 +16,6 @@
   "author": "Cruceru Alexandru",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^3.2.3",
     "sass": "^1.49.9"
   },
   "dependencies": {

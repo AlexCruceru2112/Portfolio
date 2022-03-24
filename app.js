@@ -19,11 +19,13 @@ window.addEventListener("scroll", () => {
   //navbar sticky
   if (scroll > 50) {
     header.classList.add("fixed-top");
+
     // add padding top to show content behind navbar
     navbar_height = header.offsetHeight;
     document.body.style.paddingTop = navbar_height + "px";
   } else {
     header.classList.remove("fixed-top");
+
     // remove padding top from body
     document.body.style.paddingTop = "0";
   }

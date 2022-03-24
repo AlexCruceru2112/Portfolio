@@ -1,29 +1,11 @@
-body {
-  font-family: "Poppins", sans-serif;
-}
 $font-weight-bold: 1000;
-//theme colors
-$pink-orange: #ff4655;
-$dark-blue: #0f1923;
-$dark-color: #271d26;
-$dark-colorII: #6b6069;
+$font-weight-normal: 500;
+$font-weight-light: 400;
 
-//white-black
-$white: #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black: #000;
-
-$primary: $pink-orange;
-$secondary: $dark-colorII;
-$dark: $dark-color;
+$light: #ece8e1;
+$dark: #271d26;
+$primary: #ff4655;
+$secondary: #6b6069;
 
 $link-color: $dark;
 
@@ -41,30 +23,34 @@ $link-color: $dark;
   width: 96px;
   height: 96px;
 }
-.custom-mini-icon {
-  width: 32px;
-  height: 32px;
-}
-.nav-link:hover {
-  border: 1px solid $dark !important;
+
+.custom-nav-link {
+  width: 125px;
 }
 .active {
+  color: $light !important;
   background-color: $dark !important;
 }
 
 @media (min-width: 992px) {
-  .resumeBtn:hover {
-    color: $white !important;
+  .custom-nav-link {
+    width: 200px;
   }
-  .resumeBtn::before {
+  .hoverEffect {
+    position: relative;
+  }
+  .hoverEffect:hover {
+    color: $light !important;
+  }
+  .hoverEffect::before {
     transform: scaleX(0);
     transform-origin: bottom right;
   }
-  .resumeBtn:hover::before {
+  .hoverEffect:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .resumeBtn::before {
+  .hoverEffect::before {
     content: " ";
     display: block;
     position: absolute;
@@ -77,25 +63,30 @@ $link-color: $dark;
     z-index: -1;
     transition: transform 0.3s ease;
   }
-  .resumeBtn {
-    position: relative;
-  }
+
   .contactBTN:hover {
     background-color: $primary !important;
   }
+  //work css
   .work-tile {
     transition: 0.2s ease-out;
   }
   .work-tile:hover {
     transition: 0.2s ease-in;
-    opacity: 0.95;
+    opacity: 0.9;
   }
   .custom-project-card {
     height: min(100%, 450px);
   }
-  .contact-link:hover {
-    border: 1px solid $secondary !important;
+  .contact-icon {
+    transition: 0.2s ease-out;
   }
+  .contact-icon:hover {
+    transition: 0.1s ease-in;
+    background-color: $primary !important;
+  }
+  //contact css
 }
+
 //IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

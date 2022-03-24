@@ -13,7 +13,6 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <!----------------------->
 
@@ -23,54 +22,49 @@
     <button type="button" class="btn btn-danger btn-floating btn-md" id="btn-back-to-top">back to top</button>
     <!----------------------------cd-| PAGE HEADER |---->
     <section id="nav">
-      <div class="bg-light py-2 text-center text-light">secret text</div>
+      <div class="bg-dark py-2 text-center text-light">Portfolio Website / Front End Development</div>
       <nav id="navBar">
-        <div class="container bg-light border-bottom d-flex flex-wrap justify-content-center pt-3">
-          <a
-            href="#nav"
-            class="d-flex flex-column align-items-lg-end mb-3 mb-md-0 me-md-auto text-dark text-decoration-none lh-1 d-none d-lg-block"
+        <div class="bg-light">
+          <div
+            class="container d-flex justify-content-sm-between justify-content-center border-bottom border-secondary py-3"
           >
-            <blockquote class="blockquote fw-bolder text-dark">Portfolio Website - Alex Cruceru</blockquote>
-            <figcaption class="blockquote-footer text-uppercase text-end">Junior Front-End Dev.</figcaption>
-          </a>
+            <div class="hoverEffect btn bg-dark text-light btn-lg me-lg-1 d-sm-block d-none">ALEX CRUCERU - DEV.</div>
 
-          <ul class="nav nav-pills">
-            <li class="nav-item">
+            <div class="d-flex">
               <a
                 href="#home"
-                class="nav-link active fw-bolder mx-lg-1 m-3 border px-lg-5"
+                class="custom-nav-link me-sm-1 me-2 btn border-dark btn-lg me-lg-1 active"
                 aria-current="page"
                 id="homeLink"
                 >Home</a
               >
-            </li>
-
-            <li class="nav-item">
-              <a href="#work" class="nav-link fw-bolder mx-lg-1 border m-3 px-lg-5" id="workLink">Projects</a>
-            </li>
-          </ul>
+              <a href="#work" class="custom-nav-link ms-sm-1 ms-2 btn border-dark btn-lg me-lg-1" id="workLink"
+                >Projects</a
+              >
+            </div>
+          </div>
         </div>
       </nav>
     </section>
     <!-----------------------------| FRONT PAGE |----->
     <section id="home">
-      <div class="container">
+      <div class="container py-4">
         <!---->
-        <div class="d-lg-flex flex-row-reverse align-items-lg-center align-items-start justify-content-between my-5">
-          <img src="./IMAGE/main-img2.png" alt="main-img" class="img-fluid mb-lg-5 pt-lg-5" />
+        <div class="d-lg-flex flex-row-reverse align-items-lg-center align-items-start justify-content-between mt-5">
+          <img src="./IMAGE/main-img2.png" alt="main-img" class="d-none d-lg-block mb-lg-5 pt-lg-5" />
 
-          <div class="d-flex flex-column text-center text-lg-start custom-main-text pt-5">
+          <div class="d-flex flex-column text-center text-lg-start custom-main-text pt-lg-5">
             <div class="display-3 text-dark fw-bold">Web UI Designer & Front End Developer</div>
-            <div class="lead my-2 fw-normal text-secondary">
+            <div class="lead my-2 fw-light text-secondary">
               Hi there! My name is Alexandru and I introduce myself as a junior self-taught Web Developer enthusiast
-              with two years of experience and twenty four of life, who loves art.
+              with two years of experience and twenty-four of life, who loves art.
             </div>
 
-            <div class="d-grid gap-2 d-lg-block mt-3">
+            <div class="d-grid gap-2 d-lg-block mt-4">
               <a
                 href="https://resume.io/r/8gucBDlA1"
                 target="_blank"
-                class="resumeBtn btn border-dark btn-lg me-lg-1"
+                class="hoverEffect btn border-dark btn-lg me-lg-1"
                 role="button"
                 aria-disabled="true"
                 >Check Resume</a
@@ -90,8 +84,8 @@
     </section>
     <!-----------------------------| EXP PAGE |------->
     <section id="exp">
-      <div class="container border-top pb-5">
-        <span class="badge bg-secondary my-3">My Experience</span>
+      <div class="container border-bottom border-secondary py-4">
+        <span class="badge bg-secondary my-3 fw-normal">My Experience</span>
         <div class="row g-4 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
             <img src="./IMAGE/Icons/react.png" class="img-fluid rounded me-2 custom-exp-icon" />
@@ -132,8 +126,8 @@
     </section>
     <!-----------------------------| WORK PAGE |------>
     <section id="work">
-      <div class="container border-top pb-5">
-        <span class="badge bg-secondary my-3">Work and Projects</span>
+      <div class="container py-4 mb-5">
+        <span class="badge bg-secondary my-3 fw-normal">Work and Projects</span>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Drawing App">
             <div class="card shadow-sm custom-project-card">
@@ -310,43 +304,28 @@
     </section>
     <!-----------------------------| CONTACT PAGE |--->
     <section id="contact">
-      <div class="container border-top pb-5">
+      <div class="container border-top border-secondary mb-3">
         <footer class="d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center py-3">
           <div class="col-md-4 d-flex align-items-center">
-            <a href="" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"> </a>
-            <span class="text-dark">&copy; 2022 Alex Cruceru, All rights reserved.</span>
+            <span class="badge bg-secondary my-3 fw-normal">&copy; 2022 Alex Cruceru, All rights reserved.</span>
           </div>
 
           <ul class="nav col-md-6 justify-content-end list-unstyled d-flex mt-3 mt-lg-0">
-            <li
-              class="ms-3 contact-link border rounded-circle"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Facebook"
-            >
-              <a class="text-muted" href="https://www.facebook.com/alexandru.cruceru.77/" target="_blank"
-                ><img src="./IMAGE/Icons/facebook.png" style="width: 48px; height: 48px"
-              /></a>
+            <li class="ms-3 contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Linked In">
+              <a class="text-muted" href="https://www.linkedin.com/in/alexandru-cruceru-43823a1b4/" target="_blank">
+                <i class="bx bxl-linkedin text-light rounded p-2 h2 bg-dark contact-icon"></i>
+              </a>
             </li>
-            <li
-              class="ms-3 contact-link border rounded-circle"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Linked In"
-            >
-              <a class="text-muted" href="https://www.linkedin.com/in/alexandru-cruceru-43823a1b4/" target="_blank"
-                ><img src="./IMAGE/Icons/linkedin.png" style="width: 48px; height: 48px"
-              /></a>
+
+            <li class="ms-3 contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+              <a class="text-muted" href="https://www.facebook.com/alexandru.cruceru.77/" target="_blank">
+                <i class="bx bxl-facebook text-light rounded p-2 h2 bg-dark contact-icon"></i>
+              </a>
             </li>
-            <li
-              class="ms-3 contact-link border rounded-circle"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="e-mail"
-            >
-              <a class="text-muted" href="mailto:alexandru.devend@gmail.com"
-                ><img src="./IMAGE/Icons/mail.png" style="width: 48px; height: 48px"
-              /></a>
+            <li class="ms-3 contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="g-mail">
+              <a class="text-muted" href="mailto:alexandru.devend@gmail.com">
+                <i class="bx bxl-gmail text-light rounded p-2 h2 bg-dark contact-icon"></i>
+              </a>
             </li>
           </ul>
         </footer>

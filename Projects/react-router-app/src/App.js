@@ -1,15 +1,17 @@
+import React from "react";
+
 import Home from "./components/Home";
 import Details from "./components/Details";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <div className="container">
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/:id" component={Details} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/:name" element={<Details />} />
         </Routes>
       </div>
     </Router>

@@ -8,8 +8,8 @@ function Movie(props) {
   }
 
   return (
-    <div className="d-flex align-items-center justify-content-between my-2 rounded border bg-light">
-      <div className="d-flex  px-3">
+    <div className="d-flex align-items-center justify-content-between my-2 rounded border bg-light shadow-sm">
+      <div className="d-flex  px-3 ">
         <div className="text-dark  p-2">{props.name}</div>
         <span class="text-dark fw-bolder  p-2">${props.price} </span>
       </div>

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../poke.css";
-function Details({ match }) {
+
+function Details() {
   useEffect(() => {
     fetchPoke();
   }, []);
-
+  let { name } = useParams();
   const [poke, setPoke] = useState({
     sprites: { other: { home: {} } },
     stats: [{}, {}, {}, {}, {}, {}],
@@ -13,7 +15,7 @@ function Details({ match }) {
   });
 
   const fetchPoke = async () => {
-    const data = await fetch("https://pokeapi.co/api/v2/pokemon/" + match.params.id);
+    const data = await fetch("https://pokeapi.co/api/v2/pokemon/" + name);
     const pokeData = await data.json();
     setPoke(pokeData);
   };

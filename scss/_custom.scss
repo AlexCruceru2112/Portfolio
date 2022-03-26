@@ -9,6 +9,16 @@ $secondary: #4d424b;
 
 $link-color: $dark;
 
+//
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+//
 #btn-back-to-top {
   z-index: 999;
   position: fixed;
@@ -16,14 +26,16 @@ $link-color: $dark;
   right: 16px;
   display: none;
 }
+//
 .custom-main-text {
   width: min(100%, 650px);
 }
+//
 .custom-exp-icon {
   width: 96px;
   height: 96px;
 }
-
+//
 .custom-nav-link {
   width: 125px;
 }
@@ -31,7 +43,7 @@ $link-color: $dark;
   color: $light !important;
   background-color: $dark !important;
 }
-
+//
 @media (min-width: 992px) {
   .custom-nav-link {
     width: 200px;

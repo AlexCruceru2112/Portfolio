@@ -1,4 +1,13 @@
 @charset "UTF-8";
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 #btn-back-to-top {
   z-index: 999;
   position: fixed;

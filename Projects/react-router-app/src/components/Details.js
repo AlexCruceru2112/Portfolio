@@ -7,7 +7,9 @@ function Details() {
   useEffect(() => {
     fetchPoke();
   }, []);
+
   let { name } = useParams();
+
   const [poke, setPoke] = useState({
     sprites: { other: { home: {} } },
     stats: [{}, {}, {}, {}, {}, {}],
@@ -19,6 +21,7 @@ function Details() {
     const pokeData = await data.json();
     setPoke(pokeData);
   };
+
   return (
     <div className="container rounded shadow-sm my-5 p-5 details-cont bg-light">
       <Link to="/">go back</Link>
@@ -58,6 +61,7 @@ function Details() {
                 Attack: <span className="fw-bolder">{poke.stats[1].base_stat}</span>
               </div>
             </div>
+
             <div className="row text-center text-light">
               <div className="col lead p-2 bg-primary m-1 rounded">
                 Deffence: <span className="fw-bolder">{poke.stats[2].base_stat}</span>

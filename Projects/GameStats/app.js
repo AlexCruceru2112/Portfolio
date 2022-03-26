@@ -6,10 +6,12 @@ let inputBt = document.getElementById("inputBattleTag");
 //
 let inputServer = document.querySelectorAll(".input-server-btn");
 
+let currentRegion;
 inputServer.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     inputServer.forEach((f) => f.classList.remove("active"));
     e.target.classList.toggle("active");
+    currentRegion = e.target.value;
   });
 });
 ///////////////////////////
@@ -18,7 +20,7 @@ function getProfileData() {
 
   let apiDATA = {
     url: "https://ow-api.com/v1/stats/pc/",
-    region: inputServer.value,
+    region: currentRegion,
     name: inputText.value,
     tag: inputBt.value.replaceAll("#", "-"),
     type: "complete",
@@ -28,6 +30,7 @@ function getProfileData() {
 
   fetch(apiURL)
     .then((data) => data.json())
+
     .then((ow) => generateHTML(ow))
     .catch((error) => {
       const errorHTML = `
@@ -46,12 +49,10 @@ function getProfileData() {
                   `;
       contentArea.innerHTML = errorHTML;
     });
-
+  console.log(apiURL);
   const generateHTML = (data) => {
     let levelTotal = data.prestige * 100 + data.level;
 
-    //check if response was ok
-    //daca NU e privat is competitveStats.topHeroes !== null
     if (!data.private && data.competitiveStats.topHeroes === null) {
       fetchErrorHtml();
     }
@@ -211,5 +212,3 @@ window.addEventListener("keyup", (e) => {
     pageLoad();
   }
 });
-
-/// check if any errors before fetching

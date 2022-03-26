@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="./IMAGE/main-img.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./IMAGE/main-img.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./IMAGE/main-img.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -55,11 +56,11 @@
           <img src="./IMAGE/main-img2.png" alt="main-img" class="d-none d-lg-block mb-lg-5 pt-lg-5" />
 
           <div class="d-flex flex-column text-center text-lg-start custom-main-text pt-lg-5">
-            <div class="display-3 text-dark fw-bold">Web UI Designer & Front End Developer</div>
-            <div class="lead my-2 fw-light text-secondary">
+            <h1 class="display-3 text-dark fw-bold">Web UI Designer & Front End Developer</h1>
+            <h5 class="lead my-2 fw-light text-secondary">
               Hi there! My name is Alexandru and I introduce myself as a junior self-taught Web Developer enthusiast
               with two years of experience and twenty-four of life, who loves art.
-            </div>
+            </h5>
 
             <div class="d-grid gap-2 d-lg-block mt-4">
               <a
@@ -89,35 +90,47 @@
         <span class="badge bg-secondary fw-normal mb-4">My Experience</span>
         <div class="row g-4 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
-            <img src="./IMAGE/Icons/react.png" class="img-fluid rounded me-2 custom-exp-icon" />
+            <img
+              src="./IMAGE/Icons/react.png"
+              class="img-fluid rounded me-2 custom-exp-icon"
+              alt="exp-front-end-thumbnail"
+            />
             <div>
               <h2 class="fw-bolder text-dark">Front End_</h2>
-              <p class="text-secondary">
+              <h6 class="text-secondary">
                 I know HTML, CSS, Javascript, <span class="fw-bolder">React JS, Bootstrap</span>, Typescript, JQuery and
                 Git.
-              </p>
+              </h6>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="./IMAGE/Icons/adobe-xd.png" class="img-fluid rounded me-2 custom-exp-icon" />
+            <img
+              src="./IMAGE/Icons/adobe-xd.png"
+              class="img-fluid rounded me-2 custom-exp-icon"
+              alt="exp-graphic-design-thumbnail"
+            />
 
             <div>
               <h2 class="fw-bolder text-dark">Graphic Design_</h2>
-              <p class="text-secondary">
+              <h6 class="text-secondary">
                 I've worked for 4 years in freelancing with <span class="fw-bolder">Adobe XD</span>, Photoshop and
                 Illustrator.
-              </p>
+              </h6>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <img src="./IMAGE/Icons/man.png" class="img-fluid rounded me-2 custom-exp-icon" />
+            <img
+              src="./IMAGE/Icons/man.png"
+              class="img-fluid rounded me-2 custom-exp-icon"
+              alt="exp-social-thumbnail"
+            />
 
             <div>
               <h2 class="fw-bolder text-dark">Social Skills_</h2>
-              <p class="text-secondary">
+              <h6 class="text-secondary">
                 I'm a bald and creative guy, passionate about <span class="fw-bolder">code and design</span>, English
                 advanced.
-              </p>
+              </h6>
             </div>
           </div>
         </div>
@@ -128,18 +141,18 @@
     <section id="work">
       <div class="container py-4 my-4">
         <span class="badge bg-secondary fw-normal mb-4">Work and Projects</span>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-3">
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Drawing App">
             <div class="card shadow-sm custom-project-card">
               <a href="./Projects/DrawingApp/index.html" target="_blank"
-                ><img src="./IMAGE/thumbnails/DrawingApp.png" class="img-fluid"
+                ><img src="./IMAGE/thumbnails/DrawingApp.png" class="img-fluid" alt="drawing-app-thumbnail"
               /></a>
               <div class="card-body d-flex flex-column justify-content-between">
-                <h2 class="fw-bolder text-dark mt-2">Drawing App</h2>
-                <p class="text-secondary fw-light">
+                <h2 class="fw-bolder text-dark">Drawing App</h2>
+                <h6 class="text-secondary fw-light pb-3">
                   This is a simple drawing app made with JQuery, you have a brush, erase also, you can save your drawing
                   locally.
-                </p>
+                </h6>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="./Projects/DrawingApp/index.html" target="_blank"
@@ -157,13 +170,13 @@
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Jumping Game">
             <div class="card shadow-sm custom-project-card">
               <a href="./Projects/JumpingGAME/index.html" target="_blank"
-                ><img src="./IMAGE/thumbnails/jumpGame.png" class="img-fluid"
+                ><img src="./IMAGE/thumbnails/jumpGame.png" class="img-fluid" alt="jumping-game-thumbnail"
               /></a>
               <div class="card-body d-flex flex-column justify-content-between">
-                <h2 class="fw-bolder text-dark mt-2">Jumping Game</h2>
-                <p class="text-secondary fw-light">
+                <h2 class="fw-bolder text-dark">Jumping Game</h2>
+                <h6 class="text-secondary fw-light pb-3">
                   Vanilla Javascript side-scroll game made with Classes. This game is gonna hold your death count >:)
-                </p>
+                </h6>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="./Projects/JumpingGAME/index.html" target="_blank"
@@ -183,14 +196,14 @@
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Game Stats">
             <div class="card shadow-sm custom-project-card">
               <a href="./Projects/GameStats/index.html" target="_blank"
-                ><img src="./IMAGE/thumbnails/gameAPI.png" class="img-fluid"
+                ><img src="./IMAGE/thumbnails/gameAPI.png" class="img-fluid" alt="game-stats-thumbnail"
               /></a>
               <div class="card-body d-flex flex-column justify-content-between">
-                <h2 class="fw-bolder text-dark mt-2">Game Stats (API)</h2>
-                <p class="text-secondary fw-light">
+                <h2 class="fw-bolder text-dark">Game Stats (API)</h2>
+                <h6 class="text-secondary fw-light pb-3">
                   Check out your real-time game stats (Overwatch ). It's gonna show your searches account level, games
                   won and competitive ranks (or an unranked UI).
-                </p>
+                </h6>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="./Projects/GameStats/index.html" target="_blank"
@@ -208,15 +221,15 @@
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="To Do App">
             <div class="card shadow-sm custom-project-card">
               <a href="./Projects/todoApp/index.html" target="_blank"
-                ><img src="./IMAGE/thumbnails/todoApp.png" class="img-fluid"
+                ><img src="./IMAGE/thumbnails/todoApp.png" class="img-fluid" alt="todo-app-thumbnail"
               /></a>
               <div class="card-body d-flex flex-column justify-content-between">
-                <h2 class="fw-bolder text-dark mt-2">TODO App</h2>
-                <p class="text-secondary fw-light">
+                <h2 class="fw-bolder text-dark">TODO App</h2>
+                <h6 class="text-secondary fw-light pb-3">
                   An application made too many times.. basically saves your list in local storage that you can later
                   delete or complete it. It also has a feature for sort the list by category (All, Unfinished,
                   Completed).
-                </p>
+                </h6>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="./Projects/todoApp/index.html" target="_blank"
@@ -226,20 +239,20 @@
                       ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
                     >
                   </div>
-                  <small class="text-muted">LocalStorage</small>
+                  <small class="text-muted text-break">Local Storage</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="React Context">
             <div class="card shadow-sm custom-project-card">
-              <img src="./IMAGE/thumbnails/react-context.png" class="img-fluid" />
+              <img src="./IMAGE/thumbnails/react-context.png" class="img-fluid" alt="react-context-thumbnail" />
               <div class="card-body d-flex flex-column justify-content-between">
-                <h2 class="fw-bolder text-dark mt-2">React Context app</h2>
-                <p class="text-secondary fw-light">
+                <h2 class="fw-bolder text-dark">React Context app</h2>
+                <h6 class="text-secondary fw-light pb-3">
                   A simple movie list app that has his data stored in a react-context component. You can also add /
                   delete other movies to the list.
-                </p>
+                </h6>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="https://alexcruceru2112.github.io/react-contetxt/" target="_blank"
@@ -258,13 +271,13 @@
           </div>
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="React Router">
             <div class="card shadow-sm custom-project-card">
-              <img src="./IMAGE/thumbnails/reactRouter.png" class="img-fluid" />
+              <img src="./IMAGE/thumbnails/reactRouter.png" class="img-fluid" alt="react-router-thumbnail" />
               <div class="card-body d-flex flex-column justify-content-between">
-                <h2 class="fw-bolder text-dark mt-2">React-Router + API</h2>
-                <p class="text-secondary fw-light">
+                <h2 class="fw-bolder text-dark">React-Router + API</h2>
+                <h6 class="text-secondary fw-light pb-3">
                   This app was made by using React Router v6, here you have a list of 1.000 pokemons that you may look
                   at in detail (name, id, exp, heath, attack, defence, etc..).
-                </p>
+                </h6>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="https://alexcruceru2112.github.io/pokemon-api/" target="_blank"
@@ -276,7 +289,7 @@
                       ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
                     >
                   </div>
-                  <small class="text-muted">React Router</small>
+                  <small class="text-muted">React JS</small>
                 </div>
               </div>
             </div>

@@ -22,8 +22,8 @@ body {
 #btn-back-to-top {
   z-index: 999;
   position: fixed;
-  bottom: 16px;
-  right: 16px;
+  bottom: 1.5rem;
+  right: 1.5rem;
   display: none;
 }
 //
@@ -85,7 +85,7 @@ body {
 
   .custom-project-card {
     transition: 0.2s ease-in;
-    height: min(100%, 450px);
+    height: min(100%, 500px);
   }
   .custom-project-card:hover {
     transition: 0.2s ease-out;

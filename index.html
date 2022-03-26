@@ -28,8 +28,9 @@
           <div
             class="container d-flex justify-content-sm-between justify-content-center border-bottom border-secondary py-3"
           >
-            <div class="hoverEffect btn bg-dark text-light btn-lg me-lg-1 d-sm-block d-none">ALEX CRUCERU - DEV.</div>
-
+            <a href="#nav">
+              <div class="btn bg-dark text-light btn-lg me-lg-1 d-sm-block d-none">ALEX CRUCERU - DEV.</div>
+            </a>
             <div class="d-flex">
               <a
                 href="#home"
@@ -48,9 +49,9 @@
     </section>
     <!-----------------------------| FRONT PAGE |----->
     <section id="home">
-      <div class="container py-4">
+      <div class="container py-4 my-4">
         <!---->
-        <div class="d-lg-flex flex-row-reverse align-items-lg-center align-items-start justify-content-between mt-5">
+        <div class="d-lg-flex flex-row-reverse align-items-lg-center align-items-start justify-content-between">
           <img src="./IMAGE/main-img2.png" alt="main-img" class="d-none d-lg-block mb-lg-5 pt-lg-5" />
 
           <div class="d-flex flex-column text-center text-lg-start custom-main-text pt-lg-5">
@@ -84,8 +85,8 @@
     </section>
     <!-----------------------------| EXP PAGE |------->
     <section id="exp">
-      <div class="container border-bottom border-secondary py-4">
-        <span class="badge bg-secondary my-3 fw-normal">My Experience</span>
+      <div class="container border-bottom border-secondary py-4 my-4">
+        <span class="badge bg-secondary fw-normal mb-4">My Experience</span>
         <div class="row g-4 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
             <img src="./IMAGE/Icons/react.png" class="img-fluid rounded me-2 custom-exp-icon" />
@@ -108,7 +109,6 @@
               </p>
             </div>
           </div>
-
           <div class="col d-flex align-items-start">
             <img src="./IMAGE/Icons/man.png" class="img-fluid rounded me-2 custom-exp-icon" />
 
@@ -126,8 +126,8 @@
     </section>
     <!-----------------------------| WORK PAGE |------>
     <section id="work">
-      <div class="container py-4 mb-5">
-        <span class="badge bg-secondary my-3 fw-normal">Work and Projects</span>
+      <div class="container py-4 my-4">
+        <span class="badge bg-secondary fw-normal mb-4">Work and Projects</span>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Drawing App">
             <div class="card shadow-sm custom-project-card">
@@ -136,7 +136,7 @@
               /></a>
               <div class="card-body d-flex flex-column justify-content-between">
                 <h2 class="fw-bolder text-dark mt-2">Drawing App</h2>
-                <p class="text-secondary">
+                <p class="text-secondary fw-light">
                   This is a simple drawing app made with JQuery, you have a brush, erase also, you can save your drawing
                   locally.
                 </p>
@@ -161,7 +161,7 @@
               /></a>
               <div class="card-body d-flex flex-column justify-content-between">
                 <h2 class="fw-bolder text-dark mt-2">Jumping Game</h2>
-                <p class="text-secondary">
+                <p class="text-secondary fw-light">
                   Vanilla Javascript side-scroll game made with Classes. This game is gonna hold your death count >:)
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -187,7 +187,7 @@
               /></a>
               <div class="card-body d-flex flex-column justify-content-between">
                 <h2 class="fw-bolder text-dark mt-2">Game Stats (API)</h2>
-                <p class="text-secondary">
+                <p class="text-secondary fw-light">
                   Check out your real-time game stats (Overwatch ). It's gonna show your searches account level, games
                   won and competitive ranks (or an unranked UI).
                 </p>
@@ -212,9 +212,10 @@
               /></a>
               <div class="card-body d-flex flex-column justify-content-between">
                 <h2 class="fw-bolder text-dark mt-2">TODO App</h2>
-                <p class="text-secondary">
-                  An application made too many times.. basically saves your list in local storage that you can delete or
-                  complete. It also has a feature for sort the list by category (All, Unfinished, Completed).
+                <p class="text-secondary fw-light">
+                  An application made too many times.. basically saves your list in local storage that you can later
+                  delete or complete it. It also has a feature for sort the list by category (All, Unfinished,
+                  Completed).
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -230,44 +231,22 @@
               </div>
             </div>
           </div>
-          <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="Snake">
-            <div class="card shadow-sm custom-project-card">
-              <a href="./Projects/snakeJS/index.html" target="_blank"
-                ><img src="./IMAGE/thumbnails/snakeJs.png" class="img-fluid"
-              /></a>
-              <div class="card-body d-flex flex-column justify-content-between">
-                <h2 class="fw-bolder text-dark mt-2">Vanilla JSnake</h2>
-                <p class="text-secondary">
-                  This is probably the best Snake Game that you're ever gonna play! It shows your current score and you
-                  can change the Music and/or Effects volume.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="./Projects/snakeJS/index.html" target="_blank"
-                      ><button type="button" class="btn btn-sm btn-outline-secondary me-1">View Project</button></a
-                    >
-                    <a href="https://github.com/AlexCruceru2112/Portfolio/tree/main/Projects/snakeJS" target="_blank"
-                      ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
-                    >
-                  </div>
-                  <small class="text-muted">Javascript</small>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="col work-tile" data-bs-toggle="tooltip" data-bs-placement="top" title="React Context">
             <div class="card shadow-sm custom-project-card">
               <img src="./IMAGE/thumbnails/react-context.png" class="img-fluid" />
               <div class="card-body d-flex flex-column justify-content-between">
-                <h2 class="fw-bolder text-dark mt-2">React Context & Redux</h2>
-                <p class="text-secondary">
+                <h2 class="fw-bolder text-dark mt-2">React Context app</h2>
+                <p class="text-secondary fw-light">
                   A simple movie list app that has his data stored in a react-context component. You can also add /
                   delete other movies to the list.
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
+                    <a href="https://alexcruceru2112.github.io/react-contetxt/" target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary me-1">View Project</button></a
+                    >
                     <a
-                      href="https://github.com/AlexCruceru2112/Portfolio/tree/main/Projects/ReactProjects/context-redux/react-context-redux"
+                      href="https://github.com/AlexCruceru2112/Portfolio/tree/main/Projects/react-context-app"
                       target="_blank"
                       ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
                     >
@@ -282,19 +261,22 @@
               <img src="./IMAGE/thumbnails/reactRouter.png" class="img-fluid" />
               <div class="card-body d-flex flex-column justify-content-between">
                 <h2 class="fw-bolder text-dark mt-2">React-Router + API</h2>
-                <p class="text-secondary">
-                  This is a app that you can use to discover all of the Fortnite skins. It was made by using a free API
-                  as well as useEffect(), useState(), and of course react-router.
+                <p class="text-secondary fw-light">
+                  This app was made by using React Router v6, here you have a list of 1.000 pokemons that you may look
+                  at in detail (name, id, exp, heath, attack, defence, etc..).
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
+                    <a href="https://alexcruceru2112.github.io/pokemon-api/" target="_blank"
+                      ><button type="button" class="btn btn-sm btn-outline-secondary me-1">View Project</button></a
+                    >
                     <a
-                      href="https://github.com/AlexCruceru2112/Portfolio/tree/main/Projects/ReactProjects/react-router/react-router-app"
+                      href="https://github.com/AlexCruceru2112/Portfolio/tree/main/Projects/react-router-app"
                       target="_blank"
                       ><button type="button" class="btn btn-sm btn-outline-secondary">Source Code</button></a
                     >
                   </div>
-                  <small class="text-muted">React JS</small>
+                  <small class="text-muted">React Router</small>
                 </div>
               </div>
             </div>
@@ -304,19 +286,14 @@
     </section>
     <!-----------------------------| CONTACT PAGE |--->
     <section id="contact">
-      <div class="container border-top border-secondary mb-3">
-        <footer class="d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center py-3">
-          <div class="col-md-4 d-flex align-items-center">
-            <span class="badge bg-secondary my-3 fw-normal">&copy; 2022 Alex Cruceru, All rights reserved.</span>
-          </div>
-
-          <ul class="nav col-md-6 justify-content-end list-unstyled d-flex mt-3 mt-lg-0">
+      <div class="container border-top border-secondary py-4 mt-4">
+        <footer class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center">
+          <ul class="list-unstyled d-flex mt-3 mt-lg-0">
             <li class="ms-3 contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Linked In">
               <a class="text-muted" href="https://www.linkedin.com/in/alexandru-cruceru-43823a1b4/" target="_blank">
                 <i class="bx bxl-linkedin text-light rounded p-2 h2 bg-dark contact-icon"></i>
               </a>
             </li>
-
             <li class="ms-3 contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
               <a class="text-muted" href="https://www.facebook.com/alexandru.cruceru.77/" target="_blank">
                 <i class="bx bxl-facebook text-light rounded p-2 h2 bg-dark contact-icon"></i>
@@ -330,6 +307,7 @@
           </ul>
         </footer>
       </div>
+      <div class="bg-dark py-2 text-center text-light">&copy; 2022 Alex Cruceru, All rights reserved.</div>
     </section>
 
     <script src="app.js"></script>

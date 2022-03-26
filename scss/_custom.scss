@@ -5,7 +5,7 @@ $font-weight-light: 400;
 $light: #ece8e1;
 $dark: #271d26;
 $primary: #ff4655;
-$secondary: #6b6069;
+$secondary: #4d424b;
 
 $link-color: $dark;
 
@@ -36,6 +36,9 @@ $link-color: $dark;
   .custom-nav-link {
     width: 200px;
   }
+  .custom-nav-link:hover {
+    border: 1px solid $secondary !important;
+  }
   .hoverEffect {
     position: relative;
   }
@@ -63,20 +66,18 @@ $link-color: $dark;
     z-index: -1;
     transition: transform 0.3s ease;
   }
-
   .contactBTN:hover {
     background-color: $primary !important;
   }
   //work css
-  .work-tile {
-    transition: 0.2s ease-out;
-  }
-  .work-tile:hover {
-    transition: 0.2s ease-in;
-    opacity: 0.9;
-  }
+
   .custom-project-card {
+    transition: 0.2s ease-in;
     height: min(100%, 450px);
+  }
+  .custom-project-card:hover {
+    transition: 0.2s ease-out;
+    border: 1px solid $dark;
   }
   .contact-icon {
     transition: 0.2s ease-out;

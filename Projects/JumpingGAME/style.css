@@ -13,9 +13,9 @@
 }
 body {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  padding: 5rem 2rem;
   background-color: var(--darkColor);
   height: 100vh;
 }
@@ -25,9 +25,6 @@ canvas {
   border-bottom: 5px solid var(--darkColor);
 }
 .gameMenu {
-  position: fixed;
-  left: 5rem;
-  top: 5rem;
   color: var(--lightColor);
   font-size: 1rem;
 }

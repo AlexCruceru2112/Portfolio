@@ -64,6 +64,7 @@ $(document).ready(function () {
   $("#draw").click(() => {
     infoBoxFunc();
     $("#infoBox").text("drawing..");
+
     ctx.strokeStyle = localStorage.getItem("lastColor");
     //
     function draw(e) {

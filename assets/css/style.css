@@ -39,10 +39,6 @@ body {
     width: 200px;
   }
 
-  .custom-nav-link:hover {
-    border: 1px solid #ece8e1 !important;
-  }
-
   .hoverEffect {
     position: relative;
   }

@@ -25,13 +25,13 @@
           <div
             class="container d-flex justify-content-sm-between justify-content-center border-bottom border-secondary py-3"
           >
-            <div class="d-flex bg-dark px-2 py-1 rounded d-sm-block d-none">
+            <div class="d-flex bg-dark p-1 rounded d-sm-block d-none">
               <a href="#nav">
-                <div class="btn bg-dark text-light btn-lg me-lg-1">ALEX CRUCERU - DEV.</div>
+                <div class="btn text-light btn-lg me-lg-1">ALEX CRUCERU - DEV.</div>
               </a>
             </div>
 
-            <div class="d-flex bg-dark px-1 py-1 rounded">
+            <div class="d-flex bg-dark p-1 rounded">
               <a href="#home" class="custom-nav-link btn btn-lg text-light active" aria-current="page" id="homeLink"
                 >Home</a
               >
@@ -43,15 +43,45 @@
     </section>
     <!-----------------------------| FRONT PAGE |----->
     <section id="home">
-      <div class="container py-4 my-4">
+      <div class="container py-4">
         <!---->
         <div class="d-lg-flex flex-row-reverse align-items-lg-center align-items-start justify-content-between">
-          <img src="./IMAGE/main-img2.png" alt="main-img" class="d-none d-lg-block mb-lg-5 pt-lg-5" />
+          <div class="d-flex align-items-center">
+            <img src="./IMAGE/main-img2.png" alt="main-img" class="d-none d-lg-block mb-lg-5 pt-lg-5" />
+
+            <ul class="list-unstyled ms-5 d-lg-block d-none">
+              <li class="contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Linked In">
+                <a class="text-muted" href="https://www.linkedin.com/in/alexandru-cruceru-43823a1b4/" target="_blank">
+                  <i class="bx bxl-linkedin text-light rounded p-2 h2 bg-dark contact-icon"></i>
+                </a>
+              </li>
+              <li class="contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+                <a class="text-muted" href="https://github.com/AlexCruceru2112" target="_blank">
+                  <i class="bx bxl-github text-light rounded p-2 h2 bg-dark contact-icon"></i>
+                </a>
+              </li>
+              <li class="contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="g-mail">
+                <a class="text-muted" href="mailto:alexandru.devend@gmail.com">
+                  <i class="bx bxl-gmail text-light rounded p-2 h2 bg-dark contact-icon"></i>
+                </a>
+              </li>
+              <li class="contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="download resume">
+                <a class="text-muted" href="./Alexandru Cruceru's Resume.pdf" download>
+                  <i class="bx bxs-user-detail text-light rounded p-2 h2 bg-dark contact-icon"></i>
+                </a>
+              </li>
+              <li class="contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                <a class="text-muted" href="https://www.facebook.com/alexandru.cruceru.77/" target="_blank">
+                  <i class="bx bxl-facebook text-light rounded p-2 h2 bg-dark contact-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <div class="d-flex flex-column text-center text-lg-start custom-main-text pt-lg-5">
             <h1 class="display-3 text-dark fw-bold">Web UI Designer & Front End Developer</h1>
             <h5 class="lead my-2 fw-light text-secondary">
-              <span class="text-primary">❚</span> Hey there! My name is <span class="fw-bolder">Alexandru</span> and I
+              <span class="text-primary">❚</span>Hey there! My name is <span class="fw-bolder">Alexandru</span> and I
               introduce myself as a junior self-taught Web Developer enthusiast with
               <span class="fw-bolder">3 years of experience </span>and twenty-four of life, who loves code and design.
             </h5>
@@ -80,50 +110,40 @@
     </section>
     <!-----------------------------| EXP PAGE |------->
     <section id="exp">
-      <div class="container border-bottom border-secondary py-4 my-4">
+      <div class="container border-bottom border-secondary py-4">
         <span class="badge bg-secondary fw-normal mb-4">My Experience</span>
         <div class="row g-4 row-cols-1 row-cols-lg-2 row-cols-xl-3">
-          <div class="col d-flex align-items-start">
-            <img
-              src="./IMAGE/Icons/react.png"
-              class="img-fluid rounded me-2 custom-exp-icon"
-              alt="exp-front-end-thumbnail"
-            />
+          <div class="col d-flex align-items-start px-2">
+            <i class="bx bxl-javascript bg-dark text-primary rounded p-2 display-1 me-4"></i>
             <div>
               <h2 class="fw-bolder text-dark">Front End_</h2>
-              <h6 class="text-secondary">
-                I know HTML/CSS, Javascript, <span class="fw-bolder">React JS, Bootstrap, WordPress</span>, JQuery and
-                Git.
+              <h6 class="text-secondary border-start border-secondary px-2">
+                Around <span class="fw-bolder">3 years of practice</span> with the basic HTML, CSS, and JavaScript at a
+                high level, also SASS, Bootstrap, JQuery, Git.. and
+                <span class="fw-bolder text-decoration-underline">React JS</span>.
               </h6>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <img
-              src="./IMAGE/Icons/adobe-xd.png"
-              class="img-fluid rounded me-2 custom-exp-icon"
-              alt="exp-graphic-design-thumbnail"
-            />
+          <div class="col d-flex align-items-start px-2">
+            <i class="bx bxl-adobe bg-dark text-primary rounded p-2 display-1 me-4"></i>
 
             <div>
               <h2 class="fw-bolder text-dark">Graphic Design_</h2>
-              <h6 class="text-secondary">
-                I've worked for 4 years in freelancing with <span class="fw-bolder">Adobe XD</span>, Photoshop and
-                Illustrator.
+              <h6 class="text-secondary border-start border-secondary px-2">
+                I've worked for <span class="fw-bolder">5 years in freelancing</span> with Adobe XD, Photoshop and
+                Illustrator. Advanced in photo manipulation, photography, drawing, illustrating or
+                <span class="fw-bolder">UI design</span>.
               </h6>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
-            <img
-              src="./IMAGE/Icons/man.png"
-              class="img-fluid rounded me-2 custom-exp-icon"
-              alt="exp-social-thumbnail"
-            />
+          <div class="col d-flex align-items-start px-2">
+            <i class="bx bxs-dizzy bg-dark text-primary rounded p-2 display-1 me-4"></i>
 
             <div>
-              <h2 class="fw-bolder text-dark">Social Skills_</h2>
-              <h6 class="text-secondary">
-                I'm a bald and creative guy, passionate about <span class="fw-bolder">code and design</span>, English
-                advanced.
+              <h2 class="fw-bolder text-dark">Personal Skills_</h2>
+              <h6 class="text-secondary border-start border-secondary px-2">
+                Twenty-four years, bald and creative guy, passionate about
+                <span class="fw-bolder">code and design</span>, bachelor's degree in IT, English advanced.
               </h6>
             </div>
           </div>
@@ -326,11 +346,16 @@
     <!-----------------------------| CONTACT PAGE |--->
     <section id="contact">
       <div class="container border-top border-secondary py-4 mt-4">
-        <footer class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center">
+        <footer class="d-flex justify-content-center align-items-center">
           <ul class="list-unstyled d-flex mt-3 mt-lg-0">
             <li class="ms-3 contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Linked In">
               <a class="text-muted" href="https://www.linkedin.com/in/alexandru-cruceru-43823a1b4/" target="_blank">
                 <i class="bx bxl-linkedin text-light rounded p-2 h2 bg-dark contact-icon"></i>
+              </a>
+            </li>
+            <li class="ms-3 contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+              <a class="text-muted" href="https://github.com/AlexCruceru2112" target="_blank">
+                <i class="bx bxl-github text-light rounded p-2 h2 bg-dark contact-icon"></i>
               </a>
             </li>
             <li class="ms-3 contact-link" data-bs-toggle="tooltip" data-bs-placement="top" title="g-mail">

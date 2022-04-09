@@ -31,8 +31,7 @@ body {
 }
 
 .active {
-  color: #ece8e1 !important;
-  background-color: #271d26 !important;
+  background-color: #ff4655 !important;
 }
 
 @media (min-width: 992px) {
@@ -41,7 +40,7 @@ body {
   }
 
   .custom-nav-link:hover {
-    border: 1px solid #4d424b !important;
+    border: 1px solid #ece8e1 !important;
   }
 
   .hoverEffect {
@@ -87,7 +86,7 @@ body {
 
   .custom-project-card:hover {
     transition: 0.2s ease-out;
-    border: 1px solid #271d26;
+    border: 1px solid #4d424b;
   }
 
   .contact-icon {
